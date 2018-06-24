@@ -39,12 +39,28 @@ body {
     color: white;
     font-family: 'Montserrat', sans-serif;
     position: absolute;
-    top: 40%;
-    left: 50%;
-    font-size: 3vw;
+    top: 15%;
+    left: 16.5%;
+    font-size: 3.25vw;
     text-shadow: 1px 1px 1px red, 2px 2px 3px orange, 2px 2px 3px yellow;
+    animation-delay: 0.2s;
 }
 
+.links{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 100%;
+    left: -7.5%;
+    font-size: 2vw;
+    text-shadow: none;
+    animation-delay: 0.2s;
+    white-space: nowrap;
+}
+span:hover{
+    cursor: pointer;
+    color: rgb(228, 226, 226);
+}
 .item {
     justify-content: center;
     align-items: center;
@@ -76,7 +92,7 @@ img {
 }
 
 #item4 {
-    grid-column: 4 / 6;
+    grid-area: 2 / 4 / 3 / 6;
 }
 
 #item5 {
