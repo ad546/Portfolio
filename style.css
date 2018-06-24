@@ -10,18 +10,9 @@ body {
     height: 100%;
     margin:0;
     padding:0;
-    background-color: white;
+    background-color: rgb(226, 242, 245);
 
 }
-/*.intro {
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    background: url(img/utah.jpg) no-repeat 50% 50%;
-    display: table;
-    top: 0;
-    background-size: cover;
-}*/
 
 :root {
     --yellow: #ffff66;
@@ -61,6 +52,7 @@ body {
     overflow: hidden;
     position: relative;
     text-align: center;
+    box-shadow: 0 0 10px #777;
 }
 
 img {
@@ -87,27 +79,4 @@ img {
 
 #item5 {
     grid-column: 1 / 6;
-}
-
-/* Content */
-
-.information {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
-    justify-content: center;
-    height: 100vh;
-}
-
-#item6 {
-    background-color: red;
-}
-
-#item7 {
-    background-color: orange;
-}
-
-#item8 {
-    background-color: yellow;
 }
