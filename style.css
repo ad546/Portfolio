@@ -159,8 +159,10 @@ img {
 
 #projects {
     transform: rotateY(180deg);
-    background-color: yellow; 
     z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact {
@@ -169,3 +171,17 @@ img {
     z-index: 0;
 }
 
+.projects-text {
+    align-self: flex-start;
+    position: absolute;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.8vw;
+    margin-top: 7%;
+    z-index: 5;
+}
+
+.test {
+    background-color: white;
+    opacity: 0.6;
+}
