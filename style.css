@@ -100,22 +100,30 @@ img {
 }
 
 /* entire container, keeps perspective */
-#flip-c {
+#flip-contact, #flip-about, #flip-projects {
 	perspective: 1000px;
 }
 	/* flip the pane when hovered*/ 
-	.flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
+	.flip-container.flip .flipper {
 		transform: rotateY(180deg);
-	}
+    }
+    
+    .flip-container.horizontal-flip .flipper {
+        transform: rotateX(-180deg);
+    }
 
-#flip-c {
+    .flip-container.horizontal-flip-x .flipper {
+        transform: rotateX(180deg);
+    }
+
+#flip-contact, #flip-about, #flip-projects {
 	width: 100%;
 	height: 100%;
 }
 
-.flipper, .front, #about, #projects, #contact {
+.flipper, #front, #about, #projects, #contact {
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
 /* flip speed goes here */
@@ -127,7 +135,7 @@ img {
 }
 
 /* hide back of pane during swap */
-.front, #about, #projects, #contact {
+#front, #about, #projects, #contact {
 	backface-visibility: hidden;
 
 	position: absolute;
@@ -136,17 +144,17 @@ img {
 }
 
 /* front pane, placed above back */
-.front {
-	z-index: 3;
+#front {
+	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
 
 /* back, initially hidden pane */
 #about {
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
     background-color: red;
-    z-index: 2;
+    z-index: 0;
 }
 
 #projects {
@@ -156,7 +164,8 @@ img {
 }
 
 #contact {
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
     background-color: orange;
     z-index: 0;
 }
+

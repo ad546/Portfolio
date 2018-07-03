@@ -18,16 +18,22 @@
     <!-- Landing Page -->
         <div class="container-grid">
                 <div class="item animated bounceInLeft" id="item1">
-                    <div class="flip-container" id="flip-c">
+                    <div class="flip-container" id="flip-projects">
                         <div class="flipper">
-                            <div class="front">
+                            <div id="front">
                                 <img src="img/left.jpg">
-                            </div>
-                            <div id="about">
-                                About
                             </div>
                             <div id="projects">
                                 Projects
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item animated bounceInDown" id="item2">
+                    <div class="flip-container" id="flip-contact">
+                        <div class="flipper">
+                            <div id="front">
+                                <img src="img/top.jpg">
                             </div>
                             <div id="contact">
                                 Contact
@@ -35,12 +41,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="item animated bounceInDown" id="item2"><img src="img/top.jpg"></div>
                 <div class="item animated bounceInRight" id="item3"><img src="img/right.jpg"></div>
                 <div class="item animated bounceIn" id="item4"><img src="img/middle.jpg"><div class="name animated zoomIn">
-                    Austin Daspit<div class="links animated zoomIn"><span onclick="cardFlip(1)">About</span> | <span onclick="cardFlip(2)"
-                        >Projects</span> | <span onclick="cardFlip(3)">Contact</span></div></div></div>
-                <div class="item animated bounceInUp" id="item5"><img src="img/bottom.jpg"></div>
+                    Austin Daspit<div class="links animated zoomIn"><span onclick="bottomFlip()">About</span> | 
+                        <span onclick="leftFlip()">Projects</span> | <span onclick="topFlip()">Contact</span></div></div></div>
+                <div class="item animated bounceInUp" id="item5">
+                    <div class="flip-container" id="flip-about">
+                        <div class="flipper">
+                            <div id="front">
+                                <img src="img/bottom.jpg">
+                            </div>
+                            <div id="about">
+                                About
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     <script src="app.js"></script>
 </body>
