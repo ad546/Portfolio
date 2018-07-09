@@ -31,6 +31,14 @@ function bottomFlip() {
     }
 }
     
+function exitCard(cardName) {
+    var cards = {
+        "about" : bottomFlip,
+        "projects" : leftFlip,
+        "contact" : topFlip
+    };
+    return cards[cardName]();
+}
     
 
 
