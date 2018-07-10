@@ -11,23 +11,22 @@
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    
+    <title>Austin Daspit Portfolio</title>
 </head>
-<header><title>Austin Daspit Portfolio</title></header>
 <body>
     <!-- Landing Page -->
         <div class="container-grid">
                 <div class="item animated bounceInLeft" id="item1">
                     <div class="flip-container" id="flip-projects">
                         <div class="flipper">
-                            <div id="front">
-                                <img src="img/left.jpg">
+                            <div class="front">
+                                <img src="img/left.jpg" alt="left side of mountain picture">
                             </div>
                             <div id="projects">
                                 <div class="exit fas fa-times" onclick="exitCard('projects')"></div>
                                 <div class="information-box">
                                     Projects
-                                    <hr width="75%">
+                                    <hr>
                                     <div class="projects-thumbnails">
                                         <div class="item">Project Placeholder</div>
                                         <div class="item">Project Placeholder</div>
@@ -38,7 +37,7 @@
                                     </div>
                                 </div>
                                 <div class="test">
-                                    <img src="img/left.jpg">
+                                    <img src="img/left.jpg" alt="left side of the mountain">
                                 </div>
                             </div>
                         </div>
@@ -47,14 +46,14 @@
                 <div class="item animated bounceInDown" id="item2">
                     <div class="flip-container" id="flip-contact">
                         <div class="flipper">
-                            <div id="front">
-                                <img src="img/top.jpg">
+                            <div class="front">
+                                <img src="img/top.jpg" alt="top side of mountain picture">
                             </div>
                             <div id="contact">
                                 <div class="exit fas fa-times" onclick="exitCard('contact')"></div>
                                 <div class="information-box">
                                     Contact
-                                    <hr width="75%">
+                                    <hr>
                                     <div class="logo-flex">
                                         <div class="logo">
                                             <a href="http://www.linkedin.com/in/austindaspit" target="_blank"><img src="img/In-Black-128px-R.png" alt="linkedin logo"></a>
@@ -62,31 +61,35 @@
                                     </div>
                                 </div>
                                 <div class="test">
-                                    <img src="img/top.jpg">
+                                    <img src="img/top.jpg" alt="top side of mountain picture">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="item animated bounceInRight" id="item3"><img src="img/right.jpg"></div>
-                <div class="item animated bounceIn" id="item4"><img src="img/middle.jpg"><div class="name animated zoomIn">
+                <div class="item animated bounceInRight" id="item3"><img src="img/right.jpg" alt="right side of mountain picture">
+                    <div class="credit">
+                        <a class="credit" href="https://unsplash.com/@hollymandarich?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge" target="_blank" rel="noopener noreferrer"><img class="unsplash" src="img/unsplash.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="item animated bounceIn" id="item4"><img src="img/middle.jpg" alt="middle of mountain picture"><div class="name animated zoomIn">
                     Austin Daspit<div class="links animated zoomIn"><span onclick="bottomFlip()">About</span> | 
                         <span onclick="leftFlip()">Projects</span> | <span onclick="topFlip()">Contact</span></div></div></div>
                 <div class="item animated bounceInUp" id="item5">
                     <div class="flip-container" id="flip-about">
                         <div class="flipper">
-                            <div id="front">
-                                <img src="img/bottom.jpg">
+                            <div class="front">
+                                <img src="img/bottom.jpg" alt="bottom side of mountain picture">
                             </div>
                             <div id="about">
                                 <div class="exit fas fa-times" onclick="exitCard('about')"></div>
                                 <div class="information-box">
                                     About
-                                    <hr width="75%">
+                                    <hr>
                                     <p id="about-information">Aspiring Developer . HTML . CSS . JavaScript . VueJS</p>
                                 </div>
                                 <div class="test">
-                                    <img src="img/bottom.jpg">
+                                    <img src="img/bottom.jpg" alt="bottom side of mountain picture">
                                 </div>
                             </div>
                         </div>
@@ -99,18 +102,24 @@
                 <div class="mobile-name">
                         Austin Daspit
                 </div>
+                <div class="credit">
+                    <a class="credit" href="https://unsplash.com/@hollymandarich?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge" target="_blank" rel="noopener noreferrer"><img class="unsplash" src="img/unsplash.svg" alt=""></a>
+                </div>
             </div>
             <div class="mobile-center">
                 About
-                <hr width="75%">
+                <hr>
                 <p class="mobile-text">Aspiring Developer . HTML . CSS . JavaScript . VueJS</p>
             </div>
             <div class="mobile-introduction">
-                <img src="img/dino-reichmuth-115620-unsplash.jpg" alt="utah">            
+                <img src="img/dino-reichmuth-115620-unsplash.jpg" alt="utah">
+                <div class="credit">
+                    <a class="credit" href="https://unsplash.com/@dinoreichmuth" target="_blank" rel="noopener noreferrer"><img class="unsplash" src="img/unsplash.svg" alt=""></a>
+                </div>            
             </div>
             <div class="mobile-center" id="mobile-projects">
                 Projects
-                <hr width="75%">
+                <hr>
                 <div class="mobile-projects-thumbnails">
                     <div class="item">Project Placeholder</div>
                     <div class="item">Project Placeholder</div>
@@ -121,11 +130,14 @@
                 </div>
             </div>
             <div class="mobile-introduction">
-                <img src="img/robert-murray-166837-unsplash.jpg" alt="utah">            
+                <img src="img/robert-murray-166837-unsplash.jpg" alt="utah">  
+                <div class="credit">
+                    <a class="credit" href="https://unsplash.com/@fastturtle" target="_blank" rel="noopener noreferrer"><img class="unsplash" src="img/unsplash.svg" alt=""></a>
+                </div>          
             </div>
             <div class="mobile-center">
                 Contact
-                <hr width="75%">
+                <hr>
                 <div class="logo" id="mobile-logo">
                     <a href="http://www.linkedin.com/in/austindaspit" target="_blank"><img src="img/In-Black-128px-R.png" alt="linkedin logo"></a>
                 </div>
